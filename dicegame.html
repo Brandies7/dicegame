@@ -10,8 +10,22 @@
 		<link rel="stylesheet" type="text/css" href="dicegame.css">
 	</head>
 	<body>
-		<center>
-	<button align="right" onclick>Roll Dice</button>
-		</center>
-		<script type="text/javascript" src="dicegame.js"></script>
+		<button id="button1" onclick="getPlayer1()">Player 1</button>
+			<p  align="center" id="diceStyle1" class="dice"></p>
+			<br>
+			<p  align="center" id="diceStyle2" class="dice"></p>
+		<button id="button2" onclick="getPlayer2()">Player 2</button>
+			<p  align="center" id="diceStyle3" class="dice"></p>
+			<br>
+			<p  align="center" id="diceStyle4" class="dice"></p>
+		<audio id="toasty" autoplay> 
+			<source src="../toasty.mp3" type="audio/mpeg">
+		</audio>
+			
+		
+		
+		
+		
+	<script type="text/javascript" src="dicegame.js"></script>
 	</body>
+</html>

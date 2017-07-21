@@ -1,9 +1,33 @@
 body{
 
-	background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBMJBvQpMZ9BxmuVTOOyQb3eQR9hH8R93KYZy0b_nSJgVi2cO);
+	background-image:url(http://media.istockphoto.com/photos/abstract-green-felt-background-picture-id499233392?k=6&m=499233392&s=612x612&w=0&h=1pQVgiEFCuxAckjmZ3I9YV2l683g9t-dlGaoVJFikyU=);
 	
     background-repeat: no-repeat;
     background-size: cover;
     
 }
-	
+button{
+	background-color:yellow;
+	margin-top:10%;
+	display:inline;
+	padding:10px
+
+}
+.dice{
+	background-color:grey;
+	width:50px;
+	height:50px;
+	padding:2px;
+	border:2px solid;
+	margin:auto;
+	font-size:30px;
+}
+#button1{
+	margin-left:20%;
+}
+#button2{
+	margin-left:75%
+}
+
+    
+             
