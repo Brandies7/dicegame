@@ -1,17 +1,18 @@
-body{
-
+#body1{
+	background-image:url(https://wallpaperscraft.com/image/die_hard_40_bruce_willis_john_mcclane_17774_3840x2160.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#body2{
 	background-image:url(http://media.istockphoto.com/photos/abstract-green-felt-background-picture-id499233392?k=6&m=499233392&s=612x612&w=0&h=1pQVgiEFCuxAckjmZ3I9YV2l683g9t-dlGaoVJFikyU=);
-	
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+	background-repeat:no-repeat;
+    background-size:cover;
 }
 button{
 	background-color:yellow;
-	margin-top:10%;
+	margin-top:5%;
 	display:inline;
 	padding:10px
-
 }
 .dice{
 	background-color:grey;
@@ -28,6 +29,38 @@ button{
 #button2{
 	margin-left:75%
 }
+#roll2{
+	font-weight:bold;
+	color:black;
+}
+#roll{
+	font-weight:bold;
+	color:black;
+}
+h2{
+	font-weight:bolder;
+	color:black;
+}
+#diehard{
+	position:absolute;
+	bottom:8px;
+	right:5px;
+	color:white;
+	font-weight:bolder;
+}
+#playfree{
+	color:white;
+	font-weight:bolder;
+	
+
+}
+.centercontent{
+	max-width:500px;
+	margin:auto;
+}
+
+
+
 
     
              

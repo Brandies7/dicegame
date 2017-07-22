@@ -9,23 +9,20 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="dicegame.css">
 	</head>
-	<body>
+	<body id="body2">
+		<center>
+			<h2>Fist Player To Roll Snake Eyes Wins!</h2>
+		</center>
 		<button id="button1" onclick="getPlayer1()">Player 1</button>
-			<p  align="center" id="diceStyle1" class="dice"></p>
+			<p  align="center" id="die1" class="dice"></p>
 			<br>
-			<p  align="center" id="diceStyle2" class="dice"></p>
+			<p  align="center" id="die2" class="dice"></p>
+			<h3 id="roll" style="clear:left;"></h3>
 		<button id="button2" onclick="getPlayer2()">Player 2</button>
-			<p  align="center" id="diceStyle3" class="dice"></p>
+			<p  align="center" id="die3" class="dice"></p>
 			<br>
-			<p  align="center" id="diceStyle4" class="dice"></p>
-		<audio id="toasty" autoplay> 
-			<source src="../toasty.mp3" type="audio/mpeg">
-		</audio>
-			
-		
-		
-		
-		
-	<script type="text/javascript" src="dicegame.js"></script>
+			<p  align="center" id="die4" class="dice"></p>
+			<h3 id="roll2" style="margin-left:87%"></h3>
+		<script type="text/javascript" src="dicegame.js"></script>
 	</body>
 </html>
