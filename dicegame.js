@@ -31,33 +31,35 @@ function getGame1Player2(){
 	}
 }
 function getGame2Player1(){
-	var die1 = document.getElementById("die5");
-    var die2 = document.getElementById("die6");
-    var roll = document.getElementById("roll3");
+	var die5 = document.getElementById("die5");
+    var die6 = document.getElementById("die6");
+    var roll3 = document.getElementById("roll3");
     var myDice1 = Math.floor(Math.random() * 6) + 1;
     var myDice2 = Math.floor(Math.random() * 6) + 1;
     var total = myDice1 + myDice2;
-    die1.innerHTML = myDice1;
-    die2.innerHTML = myDice2;
-    roll.innerHTML = "Your Score = "+total;
-    if(total===2){
-        roll.innerHTML += " SNAKE EYES!";
-        new Audio("../toasty.mp3").play();
+    die5.innerHTML = myDice1;
+    die6.innerHTML = myDice2;
+    roll3.innerHTML = "Your Score = "+total;
+    if(total===7||total===11){
+        roll3.innerHTML += " YOU LOOSE!";
+        new Audio("../youloose.wav").play();
+        
 	}
 }
 function getGame2Player2(){
-	var die1 = document.getElementById("die7");
-    var die2 = document.getElementById("die8");
-    var roll = document.getElementById("roll4");
+	var die7 = document.getElementById("die7");
+    var die8 = document.getElementById("die8");
+    var roll4 = document.getElementById("roll4");
     var myDice1 = Math.floor(Math.random() * 6) + 1;
     var myDice2 = Math.floor(Math.random() * 6) + 1;
     var total = myDice1 + myDice2;
-    die1.innerHTML = myDice1;
-    die2.innerHTML = myDice2;
-    roll.innerHTML = "Your Score = "+total;
-    if(total===2){
-        roll.innerHTML += " SNAKE EYES!";
-        new Audio("../toasty.mp3").play();
+    die7.innerHTML = myDice1;
+    die8.innerHTML = myDice2;
+    roll4.innerHTML = "Your Score = "+total;
+    if(total===7||total===11){
+    	roll4.innerHTML += " YOU LOOSE!";
+        new Audio("../youloose.wav").play();
+        
 	}
 }
 function getGame3Player1(){
@@ -179,4 +181,8 @@ function getGame6Player2(){
         roll.innerHTML += " SNAKE EYES!";
         new Audio("../toasty.mp3").play();
 	}
+}
+function goHome(){
+    var home=location.href="index1.html";
+    document.getElementById("button6").innerHTML=home;
 }

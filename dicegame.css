@@ -8,9 +8,11 @@
 	background-repeat:no-repeat;
     background-size:cover;
 }
+#body3{
+	background-color:black;
+}
 button{
-	background-color:yellow;
-	margin-top:5%;
+	margin-top:3%;
 	display:inline;
 	padding:10px
 }
@@ -24,10 +26,32 @@ button{
 	font-size:30px;
 }
 #button1{
+	background-color:yellow;
 	margin-left:20%;
+	color:black;
 }
 #button2{
-	margin-left:75%
+	background-color:yellow;
+	margin-left:75%;
+	color:black;
+}
+#button3{
+	background-color:yellow;
+	color:black;
+}
+#button4{
+	background-color:white;
+	margin-left:20%;
+	color:black;
+}
+#button5{
+	background-color:white;
+	margin-left:75%;
+	color:black;
+}
+#button6{
+	background-color:white;
+	color:black;
 }
 #roll2{
 	font-weight:bold;
@@ -37,9 +61,21 @@ button{
 	font-weight:bold;
 	color:black;
 }
-h2{
+#roll3{
+	font-weight:bold;
+	color:white;
+}
+#roll4{
+	font-weight:bold;
+	color:white;
+}
+#snake{
 	font-weight:bolder;
 	color:black;
+}
+#loose{
+	font-weight:bolder;
+	color:white;
 }
 #diehard{
 	position:absolute;
@@ -51,9 +87,7 @@ h2{
 #playfree{
 	color:white;
 	font-weight:bolder;
-	
-
-}
+	}
 .dropbutton{
 	background-color:rgb(178, 140, 57);
 	opacity:0.7;
