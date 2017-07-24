@@ -21,7 +21,16 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-
+#body6{
+	background-image:url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDNg0M4JMQL1h1vIcdeGJPdcRcpQagHVWsMKt9ZS0IfCosbNw2MQ);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#body7{
+	background-image:url(http://cdn.wallpapersafari.com/24/47/3anJyZ.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
 button{
 	margin-top:3%;
 	display:inline;
@@ -78,6 +87,30 @@ button{
 	background-color:rgb(237, 159, 4);
 	color:black;
 }
+#button10{
+	background-color:;
+	margin-left:20%;
+	color:black;
+}
+#button11{
+	background-color:;
+	margin-left:75%;
+	color:black;
+}
+#button13{
+	background-color:rgb(201, 184, 124);
+	margin-left:20%;
+	color:black;
+}
+#button14{
+	background-color:rgb(201, 184, 124);
+	margin-left:75%;
+	color:black;
+}
+#button15{
+	background-color:rgb(201, 184, 124);
+	color:black;
+}
 #roll{
 	font-weight:bold;
 	color:black;
@@ -110,6 +143,20 @@ button{
 	font-weight:bold;
 	color:rgb(173, 52, 5);
 }
+#roll9{
+	font-weight:bold;
+}
+#roll10{
+	font-weight:bold;
+}
+#roll11{
+	font-weight:bold;
+	color:rgb(9, 186, 141);
+}
+#roll12{
+	font-weight:bold;
+	color:rgb(9, 186, 141);
+}
 #snake{
 	font-weight:bolder;
 	color:black;
@@ -124,6 +171,10 @@ button{
 #fizz{
 	font-weight:bolder;
 	color:rgb(173, 52, 5);
+}
+#doubleodds{
+	font-weight:bolder;
+	color:rgb(9, 186, 141);
 }
 #diehard{
 	position:absolute;
@@ -140,11 +191,35 @@ button{
 	background-color:rgb(178, 140, 57);
 	opacity:0.7;
 	margin-left:45%;
-	color:bl;
-	border:none;
+	color:black;
+	border:black;
+	font-weight:bold;
+}
+.dropbutton:hover, .dropbutton:focus{
+	background-color:rgb(165, 111, 18);
+}
+.drpdwn{
+	position:relative;
+	display:inline-block;
 }
 .dropdowncontent{
-	margin-left:45%;
+	display:none;
+    position:absolute;
+   	margin-left:46%;
+    overflow:auto;
+}
+.dropdowncontent a{
+    color:black;
+    padding:10px 10px;
+    display:block;
+    font-weight:bold;
+}
+.dropdowncontent a:hover{
+	background-color:rgb(124, 119, 103);
+	opacity:0.7;
+}
+.show{
+	display:block;
 }
 
 

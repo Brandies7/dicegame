@@ -128,66 +128,69 @@ function getGame4Player2(){
     }
 }
 function getGame5Player1(){
-	var die1 = document.getElementById("die17");
-    var die2 = document.getElementById("die18");
-    var roll = document.getElementById("roll9");
+	var die17 = document.getElementById("die17");
+    var die18 = document.getElementById("die18");
+    var roll9 = document.getElementById("roll9");
     var myDice1 = Math.floor(Math.random() * 12) + 1;
     var myDice2 = Math.floor(Math.random() * 12) + 1;
     var total = myDice1 + myDice2;
-    die1.innerHTML = myDice1;
-    die2.innerHTML = myDice2;
-    roll.innerHTML = "Your Score = "+total;
-    if(total===2){
-        roll.innerHTML += " SNAKE EYES!";
-        new Audio("../toasty.mp3").play();
-	}
+    die17.innerHTML = myDice1;
+    die18.innerHTML = myDice2;
+    roll9.innerHTML = "Your Score = "+total;
+    if(myDice1%2>=1&&myDice2%2===0){
+        roll9.innerHTML += " Your A Winner!"
+        new Audio("../clapping.mp3").play();
+    }
 }
 function getGame5Player2(){
-	var die3 = document.getElementById("die19");
-    var die4 = document.getElementById("die20");
-    var roll2 = document.getElementById("roll10");
+	var die19 = document.getElementById("die19");
+    var die20 = document.getElementById("die20");
+    var roll10 = document.getElementById("roll10");
     var myDice3 = Math.floor(Math.random() * 12) + 1;
     var myDice4 = Math.floor(Math.random() * 12) + 1;
     var total = myDice3 + myDice4;
-    die3.innerHTML = myDice3;
-    die4.innerHTML = myDice4;
-    roll2.innerHTML = "Your Score = "+total;
-    if(total===2){
-        roll2.innerHTML += " SNAKE EYES!";
-        new Audio("../toasty.mp3").play();
-	}
+    die19.innerHTML = myDice3;
+    die20.innerHTML = myDice4;
+    roll10.innerHTML = "Your Score = "+total;
+    if(myDice3%2>=1&&myDice4%2===0){
+        roll10.innerHTML += " Your A Winner!"
+        new Audio("../clapping.mp3").play();
+    }
 }
 function getGame6Player1(){
-	var die1 = document.getElementById("die21");
-    var die2 = document.getElementById("die22");
-    var roll = document.getElementById("roll11");
+	var die21 = document.getElementById("die21");
+    var die22 = document.getElementById("die22");
+    var roll11 = document.getElementById("roll11");
     var myDice1 = Math.floor(Math.random() * 20) + 1;
     var myDice2 = Math.floor(Math.random() * 20) + 1;
     var total = myDice1 + myDice2;
-    die1.innerHTML = myDice1;
-    die2.innerHTML = myDice2;
-    roll.innerHTML = "Your Score = "+total;
-    if(total===2){
-        roll.innerHTML += " SNAKE EYES!";
-        new Audio("../toasty.mp3").play();
+    die21.innerHTML = myDice1;
+    die22.innerHTML = myDice2;
+    roll11.innerHTML = "Your Score = "+total;
+    if(myDice1===myDice2&&myDice1%2>=1&&myDice2%2>=1){
+        roll11.innerHTML += " GREAT JOB!";
+        new Audio("../jokedrum.wav").play();
 	}
 }
 function getGame6Player2(){
-	var die1 = document.getElementById("die23");
-    var die2 = document.getElementById("die24");
-    var roll = document.getElementById("roll12");
+	var die23 = document.getElementById("die23");
+    var die24 = document.getElementById("die24");
+    var roll12 = document.getElementById("roll12");
     var myDice1 = Math.floor(Math.random() * 20) + 1;
     var myDice2 = Math.floor(Math.random() * 20) + 1;
     var total = myDice1 + myDice2;
-    die1.innerHTML = myDice1;
-    die2.innerHTML = myDice2;
-    roll.innerHTML = "Your Score = "+total;
-    if(total===2){
-        roll.innerHTML += " SNAKE EYES!";
-        new Audio("../toasty.mp3").play();
+    die23.innerHTML = myDice1;
+    die24.innerHTML = myDice2;
+    roll12.innerHTML = "Your Score = "+total;
+    if(myDice1===myDice2&&myDice1%2>=1&&myDice2%2>=1){
+        roll12.innerHTML += " GREAT JOB!";
+        new Audio("../jokedrum.wav").play();
 	}
 }
 function goHome(){
     var home=location.href="index1.html";
     document.getElementById("button6").innerHTML=home;
+}
+function getDropDownMenu() {
+    document.getElementById("drpdwn").classList.toggle("show");
 }
