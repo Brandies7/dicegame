@@ -41,7 +41,7 @@ function getGame2Player1(){
     die6.innerHTML = myDice2;
     roll3.innerHTML = "Your Score = "+total;
     if(total===7||total===11){
-        roll3.innerHTML += " YOU LOOSE!";
+        roll3.innerHTML += " YOU LOSE!";
         new Audio("../youloose.wav").play();
         
 	}
@@ -57,70 +57,75 @@ function getGame2Player2(){
     die8.innerHTML = myDice2;
     roll4.innerHTML = "Your Score = "+total;
     if(total===7||total===11){
-    	roll4.innerHTML += " YOU LOOSE!";
+    	roll4.innerHTML += " YOU LOSE!";
         new Audio("../youloose.wav").play();
         
 	}
 }
 function getGame3Player1(){
-	var die1 = document.getElementById("die9");
-    var die2 = document.getElementById("die10");
-    var roll = document.getElementById("roll5");
+	var die9 = document.getElementById("die9");
+    var die10 = document.getElementById("die10");
+    var roll5 = document.getElementById("roll5");
     var myDice1 = Math.floor(Math.random() * 8) + 1;
     var myDice2 = Math.floor(Math.random() * 8) + 1;
     var total = myDice1 + myDice2;
-    die1.innerHTML = myDice1;
-    die2.innerHTML = myDice2;
-    roll.innerHTML = "Your Score = "+total;
-    if(total===2){
-        roll.innerHTML += " SNAKE EYES!";
-        new Audio("../toasty.mp3").play();
-	}
+    die9.innerHTML = myDice1;
+    die10.innerHTML = myDice2;
+    roll5.innerHTML = "Your Score = "+total;
+	if(total%2===0){
+        roll5.innerHTML += " Is Even!";
+        new Audio("../manamana.mp3").play();
+    }else{
+        roll5.innerHTML += " Is Odd!"; 
+    }
 }
 function getGame3Player2(){
-	var die1 = document.getElementById("die11");
-    var die2 = document.getElementById("die12");
-    var roll = document.getElementById("roll6");
+	var die11 = document.getElementById("die11");
+    var die12 = document.getElementById("die12");
+    var roll6 = document.getElementById("roll6");
     var myDice1 = Math.floor(Math.random() * 8) + 1;
     var myDice2 = Math.floor(Math.random() * 8) + 1;
     var total = myDice1 + myDice2;
-    die1.innerHTML = myDice1;
-    die2.innerHTML = myDice2;
-    roll.innerHTML = "Your Score = "+total;
-    if(total===2){
-        roll.innerHTML += " SNAKE EYES!";
-        new Audio("../toasty.mp3").play();
-	}
+    die11.innerHTML = myDice1;
+    die12.innerHTML = myDice2;
+    roll6.innerHTML = "Your Score = "+total;
+    if(total%2===0){
+        roll6.innerHTML += " Is Even!";
+        new Audio("../manamana.mp3").play();
+    }else{
+        roll6.innerHTML += " Is Odd!";
+    }
 }
 function getGame4Player1(){
-	var die1 = document.getElementById("die13");
-    var die2 = document.getElementById("die14");
-    var roll = document.getElementById("roll7");
+	var die13 = document.getElementById("die13");
+    var die14 = document.getElementById("die14");
+    var roll7 = document.getElementById("roll7");
     var myDice1 = Math.floor(Math.random() * 10) + 1;
     var myDice2 = Math.floor(Math.random() * 10) + 1;
     var total = myDice1 + myDice2;
-    die1.innerHTML = myDice1;
-    die2.innerHTML = myDice2;
-    roll.innerHTML = "Your Score = "+total;
-    if(total===2){
-        roll.innerHTML += " SNAKE EYES!";
-        new Audio("../toasty.mp3").play();
-	}
+    die13.innerHTML = myDice1;
+    die14.innerHTML = myDice2;
+    roll7.innerHTML = "Your Score = "+total;
+    if(total%3===0){
+        roll7.innerHTML += " FIZZZZZ!"
+        new Audio("../fizzing1.mp3").play();
+    }
 }
+
 function getGame4Player2(){
-	var die1 = document.getElementById("die15");
-    var die2 = document.getElementById("die16");
-    var roll = document.getElementById("roll8");
+	var die15 = document.getElementById("die15");
+    var die16 = document.getElementById("die16");
+    var roll8 = document.getElementById("roll8");
     var myDice1 = Math.floor(Math.random() * 10) + 1;
     var myDice2 = Math.floor(Math.random() * 10) + 1;
     var total = myDice1 + myDice2;
-    die1.innerHTML = myDice1;
-    die2.innerHTML = myDice2;
-    roll.innerHTML = "Your Score = "+total;
-    if(total===2){
-        roll.innerHTML += " SNAKE EYES!";
-        new Audio("../toasty.mp3").play();
-	}
+    die15.innerHTML = myDice1;
+    die16.innerHTML = myDice2;
+    roll8.innerHTML = "Your Score = "+total;
+    if(total%3===0){
+        roll8.innerHTML += " FIZZZZZ!"
+        new Audio("../fizzing1.mp3").play();
+    }
 }
 function getGame5Player1(){
 	var die1 = document.getElementById("die17");
